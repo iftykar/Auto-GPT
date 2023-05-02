@@ -45,7 +45,7 @@ def execute_python_file(filename: str) -> str:
         # You can replace this with the desired Python image/version
         # You can find available Python images on Docker Hub:
         # https://hub.docker.com/_/python
-        image_name = "python:3-alpine"
+        image_name = "python:3.10"
         try:
             client.images.get(image_name)
             logger.warn(f"Image '{image_name}' found locally")
